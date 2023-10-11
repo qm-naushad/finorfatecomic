@@ -1,0 +1,24 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Prevent vertical scroll */
+}
+
+.horizontal-scroll {
+    display: flex;
+    height: 100vh;
+    overflow-x: scroll;
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    perspective: 1px;
+    perspective-origin: 0 0;
+    transform-style: preserve-3d;
+}
+
+.horizontal-scroll img {
+    min-width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
