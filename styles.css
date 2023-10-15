@@ -122,3 +122,24 @@ body::-webkit-scrollbar-thumb {
     padding: 0;
 }
 
+.floating-fish {
+    width: 15%; /* adjust this based on your fish image size */
+    position: absolute;
+    bottom: 40%; /* adjust starting vertical position */
+    left: 50%;
+    opacity:1;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);  /* Adjust this value for greater/lesser float */
+    }
+}
+
+#fish2 {
+    opacity: 1;
+}

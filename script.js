@@ -35,13 +35,17 @@ const bubbleImages = [
     'bubble5.png'
 ];
 const bubbleCount = {
-    slide1: 0,
-    slide2: 5,
-    slide3: 5
+    "slide1": 0,
+    "slide2": 5,
+    "slide3": 5
 };
 const MAX_BUBBLES_PER_SLIDE = 15;  // You can change this to the number of bubbles you want as a maximum.
 
 function createBubble(slide) {
+    if (bubbleCount[slide.id] >= MAX_BUBBLES_PER_SLIDE) {
+        return;  // Do not create any more bubbles for this slide
+    }
+
     const bubble = document.createElement('img');
     bubble.src = bubbleImages[Math.floor(Math.random() * bubbleImages.length)];
     bubble.classList.add('bubble');
@@ -56,9 +60,11 @@ function createBubble(slide) {
     bubble.style.animationDuration = `${randomDuration}s`;
 
     slide.appendChild(bubble);
+    bubbleCount[slide.id]++;  // Increment the count for this slide
 
     bubble.addEventListener('animationend', () => {
         bubble.remove();
+        bubbleCount[slide.id]--;  // Decrement the count when a bubble is removed
     });
 }
 
@@ -147,6 +153,8 @@ const slide2 = document.getElementById('slide2');
 const slide3 = document.getElementById('slide3');
 const slide4 = document.getElementById('slide4');
 const fish2 = document.getElementById('fish2');
+const fish3 = document.getElementById('fish3');
+
 
 container.addEventListener('scroll', function() {
     // Define the threshold. Set it to 0.3 for 30%.
@@ -158,11 +166,17 @@ container.addEventListener('scroll', function() {
         const effectiveScroll = container.scrollLeft - startMoveAtSlide2;
         const percentageScrolled = effectiveScroll / (slide2.offsetWidth - slide2.offsetWidth * threshold1);
         fish2.style.left = -100+percentageScrolled * 65 + "%";  // Adjusting from -100% to 60%
+        fish3.style.left = -100+percentageScrolled * 65 + "%";  // Adjusting from -100% to 60%
     }
+
 
     //net animation
     const startAnimateNetAt = slide1.offsetWidth + slide2.offsetWidth * 0.7; // 60% for example
     if (container.scrollLeft > startAnimateNetAt) {
+        if(container.scrollLeft - startAnimateNetAt>10)
+            fish2.style.opacity=0;
+        else
+            fish2.style.opacity=1;
         const net2 = document.getElementById('net2');
         net2.style.transform = "translateY(20vh) translateX(-20vw) rotate(-20deg)"; // translate the net downwards by 50vh and rotate to 0 degree
     }
