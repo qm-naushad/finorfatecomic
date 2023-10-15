@@ -1,26 +1,39 @@
+let isTurning = false;
+
 const container = document.querySelector('.horizontal-scroll');
+const slide1 = document.getElementById('slide1');
+const slide2 = document.getElementById('slide2');
 
-
-window.addEventListener('mousewheel', function(e) {
+window.addEventListener('wheel', function(e) {
     if (isTurning) return;
-    
-    const slide1 = document.getElementById('slide1');
-    const slide2 = document.getElementById('slide2');
-    
+
     if (container.scrollLeft === 0 && e.deltaY > 0) {
         isTurning = true;
         slide1.classList.add('turn');
         setTimeout(() => {
+            slide1.classList.remove('turn');
             slide1.style.display = 'none';
             slide2.style.zIndex = '1';
             isTurning = false;
         }, 1000);
+    } else if (container.scrollLeft === 0 && e.deltaY < 0) {
+        // If scrolling back up when at the beginning
+        isTurning = true;
+        slide2.style.zIndex = '0';
+        slide1.style.display = 'block';
+        slide1.classList.remove('turn'); // Remove the turn class here
+        setTimeout(() => {
+            isTurning = false;
+        }, 1000);
     }
-    
+
     // Convert vertical scroll to horizontal scroll
     container.scrollLeft += e.deltaY;
     e.preventDefault();
 }, { passive: false });
+
+
+
 
 
 ///////////////////////////////////////////////////////////////////
