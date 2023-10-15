@@ -174,6 +174,49 @@ The web experience is accentuated by synchronized audio that responds to the use
 
 ##  Sneheel:
 
+### Role
+For this project, I played two main roles: 
+First, I helped direct the creative direction of the illustrations Sara and Buka made (such as framing, animations etc.)
+Second, I designed the animation based interactive elements of our code, and finished up our project by bringing together all the elements created by Sara, Buka, and QM, and providing them final touches.
+
+### Concept
+Several creative elements of the project initially started off as ideas I provided:
+1. Horizontal Scrolling as the maind river of our comic.
+2. The fish floating across the initial screens.
+3. The moving net catching the fish.
+4. The layouts of our panels being in accordance with the left to right horizontal scroll (and using this as a storytelling mechanism)
+5. The framing of the carnival, and bedroom scenes.
+6. The balloons flying across the screen at the carnival.
+7. Several other micro-effects and changes.
+
+### Coding the Animations and Interactivity:
+
+The main elements I coded, and their implementation details are as follows:
+1. the fish swimming across the screen in slides 1,2.
+   a) I implemented this by adding the fish to slide 2's div, and having it start its movement at an absolute location prior to the start of slide 2 (so it would be over sldie 1 and would cross the panel). The actual movement was acheived using the help of scroll event listeners and adjusting their parameters.
+2. The net catching the fish in slide 2.
+   a) This was achieved by combining a rotate and translate effect witht the scroll event listener.
+3. The balloons in the carnival scene
+   a) This was achieved by combining a translate effect witht the scroll event listener.
+4. The floating fish on the choice screen, the floating dead fish in the sad ending, and the floating family in the happy ending.
+   a) These were acheived by creating a keyframe animation in CSS to help the fish elements up and down.
+5. Ensuring that the animations flow smoothly
+   a) Due to the bubble animation and the several other moving elements, our website was often stuttering, and slowing down. To solve this I implemented code to ensure that the number of bubbles never increases beyond a fixed value and also fine-tuned chunks of the other code for smoother movements.
+
+### Final Changes
+
+Being the person tasked with the final parts of the project, I had to make several changes under time constraints. These included the following:
+1. Recreating the final happy ending slide:
+   I realized that without animation the slide would look dull. So I manually rmeoved the family, and used Buka's png of each family member separately for the animation
+2. Inverting colors in Slide 4 - Fishbowl.
+   I inverted the colors in this sldie to match with the theme in Slides 5 and 6. This was done manually.
+3. Layering the seaweed in Slide 1 for a depth effect.
+   Together with Buka, I used the seaweed as a new layer to have the fish past behind to create a depth effect.
+4. The fish's facial expression changing
+   Finally, I also changed the fish's facial expression when it touched the net using a mix of scroll detection and clever code.
+5. Organizing the code into directories for a more clean implementation!
+
+
 # Reflection/Evaluation (initial vs final concept, expectations and goals):
 
 ## Sara: 
@@ -229,4 +272,8 @@ This project was more than just a coding exercise for me; it was a lesson in emp
 
 
 ##  Sneheel:
+
+Overall, I am proud of how our team worked on this project from start to finish. Personally, I believe I can improve the animations further and add more elements of interactivity to the panels that don't have any.
+Judging the project from start to finish, it is interesting to note how some design directions came up in our iterative development process - for example changing the animation style for the sad ending. We also used creative tools such as OpenAI's DallE3 for inspiration in our framing - a tool that launched less than 2 weeks ago!
+My expectations for the project have largely been met and I look forward to sharing it with everybody in our class!
 
