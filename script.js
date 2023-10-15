@@ -42,10 +42,6 @@ const bubbleCount = {
 const MAX_BUBBLES_PER_SLIDE = 15;  // You can change this to the number of bubbles you want as a maximum.
 
 function createBubble(slide) {
-    if (bubbleCount[slide.id] >= MAX_BUBBLES_PER_SLIDE) {
-        return;  // Do not create any more bubbles for this slide
-    }
-
     const bubble = document.createElement('img');
     bubble.src = bubbleImages[Math.floor(Math.random() * bubbleImages.length)];
     bubble.classList.add('bubble');
@@ -60,11 +56,9 @@ function createBubble(slide) {
     bubble.style.animationDuration = `${randomDuration}s`;
 
     slide.appendChild(bubble);
-    bubbleCount[slide.id]++;  // Increment the count for this slide
 
     bubble.addEventListener('animationend', () => {
         bubble.remove();
-        bubbleCount[slide.id]--;  // Decrement the count when a bubble is removed
     });
 }
 
@@ -127,8 +121,8 @@ container.addEventListener('scroll', checkSlideVisibility);
 
 setInterval(checkSlideVisibility, 200);
 
+///////////////////
 
-//Fish animation
 
 const slide1 = document.getElementById('slide1');
 const slide2 = document.getElementById('slide2');
@@ -136,9 +130,17 @@ const slide3 = document.getElementById('slide3');
 const slide4 = document.getElementById('slide4');
 const fish2 = document.getElementById('fish2');
 
-container.addEventListener('scroll', function() {
-    // Define the threshold. Set it to 0.3 for 30%.
-    const threshold1 =0.3
+let isMuted = false;
+
+function toggleMute() {
+    const audioElements = document.querySelectorAll("audio");
+    const muteBtn = document.getElementById("muteBtn");
+
+    isMuted = !isMuted;
+
+    audioElements.forEach(audio => {
+        audio.muted = isMuted;
+    });
 
     // Fish movement for slide2
     const startMoveAtSlide2 = slide2.offsetWidth * threshold1;
@@ -173,6 +175,9 @@ container.addEventListener('scroll', function() {
 //
 
 
-
-
-
+    if (isMuted) {
+        muteBtn.src = "soundoff.png";
+    } else {
+        muteBtn.src = "soundon.png";
+    }
+}

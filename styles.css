@@ -75,6 +75,19 @@ body::-webkit-scrollbar-thumb {
 
 .conditional {
     display: none;
+}89 
+
+
+
+//////////////
+
+.audio-control {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
+    padding: 0;
+    margin: 0;
 }
 
 .fish-animation {
@@ -102,5 +115,12 @@ body::-webkit-scrollbar-thumb {
     left: -500px; /* start from the left corner */
     transition: transform 10s ease-out; /* adjust the transition time as needed */
     transform: translateY(0); /* no initial vertical translation */
+}
+
+.audio-control img {
+    width: auto; /* You can adjust this as per your requirement */
+    height: 30px; /* You can adjust this as per your requirement */
+    margin: 0;
+    padding: 0;
 }
 
