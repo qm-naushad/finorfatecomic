@@ -67,7 +67,7 @@ We used Procreate to illustrate the scenes and characters.
 
 My role was coding the website. When I embarked on this project, I aimed to deliver an engaging user experience through seamless horizontal scrolling, captivating visuals, and immersive audio. I worked on creating the basic structure for this website, established the horizontal scrolling functionality, instilled the bubble effect on the first 3 slides, added interactivity through the buttons on the fifth slide, and handpicked as well as integrated the audio elements to complement each slide's theme.
 
-## HTML Structure
+### HTML Structure
 
 The main segments I laid out are:
 
@@ -80,7 +80,7 @@ The main segments I laid out are:
 - Each slide is embedded with an `<audio>` tag to play its corresponding sound.
 - I added placeholder comments (`<!-- ... -->`) in strategic spots to guide future placement or appending of dynamic elements, such as bubbles.
 
-## CSS Styles I Crafted
+### CSS Styles I Crafted
 
 ### Layout and Design
 
@@ -99,7 +99,7 @@ The main segments I laid out are:
 
 Stationed at the top-right corner, the `.audio-control` defines the appearance of the crucial mute/unmute button, giving users auditory control.
 
-## JavaScript Features I Implemented
+### JavaScript Features I Implemented
 
 ### Effortless Scroll with A Twist
 
@@ -171,8 +171,6 @@ My expectations and goals were exceeded for this assignment. I think our group w
 ##  Buka:
 
 ##  QM:
-
-# Reflection & Evaluation on My Web Development Journey
 
 When I embarked on the journey of developing this website, I was driven by a singular vision: crafting a seamless and interactive website. My objective was to ensure users could navigate without a hitch, taking in the experience rather than getting bogged down by complexities. My coding decisions, from the outset, revolved around this primary goal.
 
