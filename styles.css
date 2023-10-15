@@ -125,12 +125,45 @@ body::-webkit-scrollbar-thumb {
 .floating-fish {
     width: 15%; /* adjust this based on your fish image size */
     position: absolute;
-    bottom: 40%; /* adjust starting vertical position */
-    left: 50%;
     opacity:1;
     animation: float 3s ease-in-out infinite;
 }
 
+#dead{
+    bottom: 40%; /* adjust starting vertical position */
+    left: 50%;
+}
+
+#neutral{
+    bottom: 20%; /* adjust starting vertical position */
+    left: 42.5%;
+}
+
+#happy{
+    width:30vh;
+    bottom: 40%; /* adjust starting vertical position */
+    left: 30%;
+}
+
+#fem{
+    transform: scaleX(-1);
+    width: 100vh;
+    bottom: 30%; /* adjust starting vertical position */
+    left: 15%;
+}
+
+#baby{
+    width:70vh;
+    bottom: 28%; /* adjust starting vertical position */
+    left: 30%;
+}
+
+.grass {
+    position: absolute;
+    right: 100vw;
+    bottom:6vh
+    
+}
 @keyframes float {
     0%, 100% {
         transform: translateY(0);

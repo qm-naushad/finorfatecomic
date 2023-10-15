@@ -92,6 +92,8 @@ leftButton.addEventListener('click', () => {
     rightSlides.forEach(slide => {
         slide.style.display = 'none';
     });
+    leftButton.style.color =  rgba(0, 0, 0, 0.1);;
+    rightButton.style.color = ''; // reset to default or whatever color it was before
 });
 
 rightButton.addEventListener('click', () => {
@@ -101,6 +103,9 @@ rightButton.addEventListener('click', () => {
     leftSlides.forEach(slide => {
         slide.style.display = 'none';
     });
+    rightButton.style.backgroundColor =  rgba(0, 0, 0, 0.1);;
+    leftButton.style.backgroundColor = ''; // reset to default or whatever color it was before
+
 });
 
 
@@ -119,6 +124,15 @@ function checkSlideVisibility() {
         } else {
             audio.pause();
         }
+        // if(slide.id=='slide8')
+        // {
+        //     const audiox = slide.getElementById('audio12');
+        //     if (slideLeft < viewRight && slideRight > viewLeft) {
+        //         audiox.play();
+        //     } else {
+        //         audiox.pause();
+        //     }
+        // }
     });
 }
 
