@@ -28,11 +28,11 @@ window.addEventListener('mousewheel', function(e) {
 
 const bubbleSlides = [document.getElementById('slide1'), document.getElementById('slide2'), document.getElementById('slide3')];
 const bubbleImages = [
-    'bubble1.png',
-    'bubble2.png',
-    'bubble3.png',
-    'bubble4.png',
-    'bubble5.png'
+    'images/bubble1.png',
+    'images/bubble2.png',
+    'images/bubble3.png',
+    'images/bubble4.png',
+    'images/bubble5.png'
 ];
 const bubbleCount = {
     "slide1": 0,
@@ -156,9 +156,9 @@ function toggleMute() {
         audio.muted = isMuted;
     });
     if (isMuted) {
-        muteBtn.src = "soundoff.png";
+        muteBtn.src = "images/soundoff.png";
     } else {
-        muteBtn.src = "soundon.png";
+        muteBtn.src = "images/soundon.png";
     }
 }
 
