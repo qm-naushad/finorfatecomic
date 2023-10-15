@@ -273,7 +273,16 @@ This project was more than just a coding exercise for me; it was a lesson in emp
 
 ##  Sneheel:
 
-Overall, I am proud of how our team worked on this project from start to finish. Personally, I believe I can improve the animations further and add more elements of interactivity to the panels that don't have any.
-Judging the project from start to finish, it is interesting to note how some design directions came up in our iterative development process - for example changing the animation style for the sad ending. We also used creative tools such as OpenAI's DallE3 for inspiration in our framing - a tool that launched less than 2 weeks ago!
-My expectations for the project have largely been met and I look forward to sharing it with everybody in our class!
+## Reflection/Evaluation
+
+### Role and Contribution
+From our early brainstorming sessions, where I proposed ideas like horizontal scrolling for the comic's primary navigation and floating fish across the starting screens, our project underwent significant evolution. Many of the creative elements I initially introduced, such as the framing of scenes and various micro-effects, were either adjusted or expanded upon. A standout example of this evolution is the alteration of the animation style for the sad ending.
+
+Reflecting on my dual role, I can see how my contributions in creative direction and animation interactivity shaped the project. Guiding the creative nuances of the illustrations and integrating dynamic elements into our code were both challenging and rewarding. As we progressed, it became evident that balancing the creative and technical aspects was crucial. For instance, while introducing the moving net animation or the carnival balloons effect, I had to ensure seamless integration with our story flow.
+
+### Expectations and Goals
+When we embarked on this journey, my vision was to create an engaging and interactive comic. And while many of my aspirations, like introducing horizontal scrolling or the depth effect in Slide 1, have been realized, I still see potential for enhancement. I believe the animations can be made even more intricate, and a higher degree of interactivity can be introduced in certain panels. One of the exciting turns in our project was leveraging OpenAI's DallE3 for framing inspiration. Integrating such a groundbreaking tool, especially just after its release, not only boosted our creative output but also kept us at the forefront of technological innovation.
+
+I am immensely proud of how our team collaborated on this project. While we have achieved a lot, I recognize areas for growth. Especially when considering the final touches, like adjusting the fish's facial expressions or optimizing the animation fluidity, there's always room for improvement. Yet, every challenge faced, whether it was the color alterations in Slide 4 or the code organization, was a learning opportunity.
+The project's journey, from ideation to realization, has been a profound learning experience. With our collective effort, I'm eagerly anticipating the response from our peers. The thrill of unveiling our creation and gauging its impact fills me with both excitement and curiosity.
 
