@@ -68,7 +68,7 @@ In this project, my primary role was to illustrate the comic slides for adding v
    ![IMG_0400](https://github.com/qm-naushad/finorfatecomic/assets/132140246/492dbbee-7d47-43ee-ab68-2d2d412baf25)
 
 2. Slide 2: Fish ends up in the net
-3. Slide 5: Fish ends up in aquarium (with other fish) at girl’s house
+3. Slide 5: Fish ends up in aquarium (with other fish) at girl’s house (together with Sara)
    ![IMG_0399](https://github.com/qm-naushad/finorfatecomic/assets/132140246/3ffd77bd-f3da-4af3-8efb-f1e1b772deff)
    
 4. Slide 6: Fish finds a partner
