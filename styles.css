@@ -42,7 +42,7 @@ body::-webkit-scrollbar-thumb {
 .bubble {
     position: absolute;
     bottom: 0;
-    animation: rise linear infinite;
+    animation: rise 10s linear infinite;
     will-change: transform;
     opacity: 0.7;
 }
@@ -90,9 +90,37 @@ body::-webkit-scrollbar-thumb {
     margin: 0;
 }
 
+.fish-animation {
+    width: 15%; /* adjust this based on your fish image size */
+    position: absolute;
+    bottom: 40%; /* adjust starting vertical position */
+    opacity:1;
+    /* left: 5%;  initial starting horizontal position */
+    /* z-index: 2; This will place the fish above the slides */
+}
+
+.net-animation {
+    width: 35%; /* adjust based on your net image size */
+    position: absolute;
+    top: -20%; /* start position above the slide */
+    left: 65%; /* adjust starting horizontal position */
+    transform: rotate(-45deg); /* initial rotation */
+    transition: transform 1s ease-in-out; /* smooth transition for net movement */
+}
+
+.balloons-animation {
+    width: 60%; /* adjust based on your balloons image size */
+    position: absolute;
+    bottom: -700px; /* start below the slide */
+    left: -500px; /* start from the left corner */
+    transition: transform 10s ease-out; /* adjust the transition time as needed */
+    transform: translateY(0); /* no initial vertical translation */
+}
+
 .audio-control img {
     width: auto; /* You can adjust this as per your requirement */
     height: 30px; /* You can adjust this as per your requirement */
     margin: 0;
     padding: 0;
 }
+

@@ -1,39 +1,26 @@
-let isTurning = false;
-
 const container = document.querySelector('.horizontal-scroll');
-const slide1 = document.getElementById('slide1');
-const slide2 = document.getElementById('slide2');
 
-window.addEventListener('wheel', function(e) {
+
+window.addEventListener('mousewheel', function(e) {
     if (isTurning) return;
-
+    
+    const slide1 = document.getElementById('slide1');
+    const slide2 = document.getElementById('slide2');
+    
     if (container.scrollLeft === 0 && e.deltaY > 0) {
         isTurning = true;
         slide1.classList.add('turn');
         setTimeout(() => {
-            slide1.classList.remove('turn');
             slide1.style.display = 'none';
             slide2.style.zIndex = '1';
             isTurning = false;
         }, 1000);
-    } else if (container.scrollLeft === 0 && e.deltaY < 0) {
-        // If scrolling back up when at the beginning
-        isTurning = true;
-        slide2.style.zIndex = '0';
-        slide1.style.display = 'block';
-        slide1.classList.remove('turn'); // Remove the turn class here
-        setTimeout(() => {
-            isTurning = false;
-        }, 1000);
     }
-
+    
     // Convert vertical scroll to horizontal scroll
     container.scrollLeft += e.deltaY;
     e.preventDefault();
 }, { passive: false });
-
-
-
 
 
 ///////////////////////////////////////////////////////////////////
@@ -47,6 +34,12 @@ const bubbleImages = [
     'bubble4.png',
     'bubble5.png'
 ];
+const bubbleCount = {
+    slide1: 0,
+    slide2: 5,
+    slide3: 5
+};
+const MAX_BUBBLES_PER_SLIDE = 15;  // You can change this to the number of bubbles you want as a maximum.
 
 function createBubble(slide) {
     const bubble = document.createElement('img');
@@ -131,6 +124,12 @@ setInterval(checkSlideVisibility, 200);
 ///////////////////
 
 
+const slide1 = document.getElementById('slide1');
+const slide2 = document.getElementById('slide2');
+const slide3 = document.getElementById('slide3');
+const slide4 = document.getElementById('slide4');
+const fish2 = document.getElementById('fish2');
+
 let isMuted = false;
 
 function toggleMute() {
@@ -142,6 +141,39 @@ function toggleMute() {
     audioElements.forEach(audio => {
         audio.muted = isMuted;
     });
+
+    // Fish movement for slide2
+    const startMoveAtSlide2 = slide2.offsetWidth * threshold1;
+    if (container.scrollLeft > startMoveAtSlide2 && container.scrollLeft < slide2.offsetWidth + slide2.offsetWidth) {
+        const effectiveScroll = container.scrollLeft - startMoveAtSlide2;
+        const percentageScrolled = effectiveScroll / (slide2.offsetWidth - slide2.offsetWidth * threshold1);
+        fish2.style.left = -100+percentageScrolled * 65 + "%";  // Adjusting from -100% to 60%
+    }
+
+    //net animation
+    const startAnimateNetAt = slide1.offsetWidth + slide2.offsetWidth * 0.7; // 60% for example
+    if (container.scrollLeft > startAnimateNetAt) {
+        const net2 = document.getElementById('net2');
+        net2.style.transform = "translateY(20vh) translateX(-20vw) rotate(-20deg)"; // translate the net downwards by 50vh and rotate to 0 degree
+    }
+
+    // Balloons animation for slide4
+    const startAnimateBalloonsAt = slide1.offsetWidth + slide2.offsetWidth + slide3.offsetWidth*0.4;
+    if (container.scrollLeft > startAnimateBalloonsAt) {
+        const balloons4 = document.getElementById('balloons4');
+        balloons4.style.transform = "translateY(-200vh) translateX(150vw)"; // move it upwards by 50vh and rightwards by 50vw
+    }
+
+});
+
+
+
+
+//balloon animation
+
+
+//
+
 
     if (isMuted) {
         muteBtn.src = "soundoff.png";
