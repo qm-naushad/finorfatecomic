@@ -66,18 +66,22 @@ In this project, my primary role was to illustrate the comic slides for adding v
 
 1. Slide 1: Fish in the Ocean
    ![IMG_0400](https://github.com/qm-naushad/finorfatecomic/assets/132140246/492dbbee-7d47-43ee-ab68-2d2d412baf25)
+
 2. Slide 2: Fish ends up in the net
 3. Slide 5: Fish ends up in aquarium (with other fish) at girl’s house
    ![IMG_0399](https://github.com/qm-naushad/finorfatecomic/assets/132140246/3ffd77bd-f3da-4af3-8efb-f1e1b772deff)
+   
 4. Slide 6: Fish finds a partner
 5. Slide 6: Fish and the family
+
 Also, I have worked on the following elements included throughout the slides:
 1. Fish overall body shape
 2. Female fish and the baby fish
    ![familyFishBody](https://github.com/qm-naushad/finorfatecomic/assets/132140246/c8e190fd-2b4b-48fd-bc2d-741dee37b2ec)
+
 3. Girl's bedroon (worked with Sara)
-5. Ocean bubbles on the title page
-6. Net that catches the fish in the ocean
+4. Ocean bubbles on the title page
+5. Net that catches the fish in the ocean
 
 ##  QM:
 
