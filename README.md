@@ -42,8 +42,8 @@ We used Procreate to illustrate the scenes and characters.
 
 - Buka illustrated the bedroom, and I illustrated the décor in it (i.e., the heart pillow, dotted duvet, teddy bear, taped drawings, fishbowl, etc)
 
-![Slide_6_(Death)--_Dead_Face 3](https://github.com/saraalmulla03/saraalmulla03.github.io/assets/144206983/38a8307a-0da6-40a0-a3b4-3d3ddffa9a27)
-![Untitled_Artwork 4](https://github.com/saraalmulla03/saraalmulla03.github.io/assets/144206983/03c3272b-405f-4998-99e0-112f3679c6b8)
+![Slide_6_(Death)--_Dead_Face 4](https://github.com/qm-naushad/finorfatecomic/assets/144206983/e1424c38-74ba-4e71-bacd-0f73249bbdc8)
+![Untitled_Artwork 12](https://github.com/qm-naushad/finorfatecomic/assets/144206983/3cf23b84-ec8e-471b-9310-2a498cc1969c)
 
 -	For the sad ending, we had the idea of inverting the colors to match the mood (white to black), which added more to the visual element while also complimenting the funereal symbolism of the moment.
 
