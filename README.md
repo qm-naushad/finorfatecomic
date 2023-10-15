@@ -65,6 +65,89 @@ We used Procreate to illustrate the scenes and characters.
 
 ##  QM:
 
+My role was coding the website. When I embarked on this project, I aimed to deliver an engaging user experience through seamless horizontal scrolling, captivating visuals, and immersive audio. I worked on creating the basic structure for this website, established the horizontal scrolling functionality, instilled the bubble effect on the first 3 slides, added interactivity through the buttons on the fifth slide, and handpicked as well as integrated the audio elements to complement each slide's theme.
+
+## HTML Structure
+
+The main segments I laid out are:
+
+1. **Audio Control**: A user-friendly icon that serves as a mute/unmute toggle.
+2. **Horizontal Scroll Container**: This container houses all the slides, providing an uninterrupted horizontal scroll experience.
+3. **Slides**: Individual canvases that I adorned with striking background images and enveloping audio.
+
+**In-depth Look**:
+- I chose to use the `background-image` CSS property for depicting the distinct visuals of each slide.
+- Each slide is embedded with an `<audio>` tag to play its corresponding sound.
+- I added placeholder comments (`<!-- ... -->`) in strategic spots to guide future placement or appending of dynamic elements, such as bubbles.
+
+## CSS Styles I Crafted
+
+### Layout and Design
+
+- I optimized the webpage to stretch across the entire viewport by setting both `body` and `html` to span 100% width and height.
+- Ensured a smooth horizontal scrolling experience with `overflow-x: scroll`.
+- Each `.slide` has been designed with a consistent width, height, while allowing custom backgrounds and borders.
+
+### Visual Enhancements
+
+- I introduced the `.turn` class to offer a visually pleasing transition between slides.
+- The scrollbar aesthetics have been refined to exude elegance, characterized by its slim structure and a chic black thumb.
+- Bubbles exhibit a natural floating motion, thanks to the `rise` animation I integrated.
+- For intuitive user interaction, the translucent buttons on slides undergo a subtle hue shift upon hover.
+
+### Audio Control Aesthetics
+
+Stationed at the top-right corner, the `.audio-control` defines the appearance of the crucial mute/unmute button, giving users auditory control.
+
+## JavaScript Features I Implemented
+
+### Effortless Scroll with A Twist
+
+- I converted the default vertical scroll behavior into a horizontal one.
+- An initial downward scroll gracefully transitions the first slide away, revealing the wonders of the second slide.
+
+### The Magic of Bubbles
+
+To breathe life into the slides, I introduced bubbles that float upwards, creating an immersive underwater experience for users.
+
+#### Implementation Details:
+
+- **HTML**: Each of the first three slides has a `<div class="bubble"></div>` element that acts as a placeholder for the generated bubbles.
+- **JavaScript**:
+  - Using a `for` loop, I randomly generated a set number of bubbles for each slide.
+  - For every bubble, properties like size (`width` and `height`), initial `bottom` position, and `animation-duration` (dictating the ascent speed) were randomly determined within predefined ranges to ensure variety.
+- **CSS**:
+  - The `.bubble` class defines the basic appearance of bubbles, making them round with a transparent border.
+  - The `rise` animation, applied to the bubbles, makes them float upwards until they fade out.
+
+### Interactive Slide Buttons
+
+The fifth slide incorporates interactive buttons that allow users to toggle between different sets of content, adding depth to the narrative.
+
+#### Implementation Details:
+
+- **HTML**: I incorporated two buttons with the classes `.btn-left` and `.btn-right`.
+- **JavaScript**:
+  - Event listeners were attached to both buttons.
+  - Upon a button click, it toggles the visibility of two content sets by manipulating the `display` CSS property or using the `classList.toggle` method.
+- **CSS**:
+  - Stylish hover effects were added to the buttons to provide feedback on user interaction.
+  - The `.active` class changes the appearance of the buttons to indicate which content set is currently being displayed.
+
+### Harmonious Audio Flow
+
+The web experience is accentuated by synchronized audio that responds to the user's navigation through the slides.
+
+#### Implementation Details:
+
+- **HTML**: Each slide is associated with an `<audio>` element containing the source of its respective background sound.
+- **JavaScript**:
+  - I integrated an `IntersectionObserver` to track when a slide enters or exits the viewport. This way, the audio plays or pauses in tandem with the visibility of its slide.
+  - The mute button's event listener toggles the playback of all audios and alters the button's visual indication.
+- **CSS**:
+  - The `.audio-control` class provides the mute/unmute button's visual representation, with a `toggle` class to swap between the two states.
+
+
 ##  Sneheel:
 
 # Reflection/Evaluation (initial vs final concept, expectations and goals):
@@ -88,6 +171,40 @@ My expectations and goals were exceeded for this assignment. I think our group w
 ##  Buka:
 
 ##  QM:
+
+# Reflection & Evaluation on My Web Development Journey
+
+When I embarked on the journey of developing this website, I was driven by a singular vision: crafting a seamless and interactive website. My objective was to ensure users could navigate without a hitch, taking in the experience rather than getting bogged down by complexities. My coding decisions, from the outset, revolved around this primary goal.
+
+## Initial Concept
+
+In the beginning, I imagined a website that would be more than just visually appealing; it would interact with users, guiding them naturally through its content. I aspired to create something that felt alive, responding to users' actions in intuitive ways.
+
+## Final Product
+
+Reflecting upon the finished product, I can observe how the initial vision evolved and matured:
+
+- **Design and UX**: 
+  The visual layout, while initially envisioned as simple, had to be meticulously crafted to ensure intuitive user navigation. It wasn't just about placing elements strategically; it was about anticipating users' expectations and needs. Each button, each transition, and each interactive feature was designed with the user's perspective in mind.
+
+- **Code and Interactivity**:
+  My initial pseudocode took on a life of their own as I delved deeper. Each line of code was written, keeping in mind the balance between functionality and user experience. The magic of bubbles, the responsive slide buttons, and the harmonious audio flow all emerged from countless hours of coding, debugging, and refining. My commitment was to ensure that the backend logic seamlessly translated into a frontend experience that felt both magical and natural.
+
+## Expectations and Goals
+
+### What I Set Out To Achieve:
+- **User-Centered Interaction**: I wanted users to feel as though the website was conversing with them, guiding them, and responding to their every move.
+- **Flawless UX**: Every user should feel comfortable and engaged, never lost or overwhelmed.
+
+### How The Code Reflected This:
+- **Code Structure**: I ensured my code was modular and well-documented, making future updates or tweaks more manageable.
+- **Responsive Elements**: Ensuring that elements like the bubble effects and slide transitions were smooth required countless iterations and careful calibration in the code.
+- **Feedback Loops**: To guarantee users felt acknowledged, I implemented various feedback mechanisms in the code, like subtle animations and audio cues.
+
+## Conclusion
+
+This project was more than just a coding exercise for me; it was a lesson in empathy, patience, and iterative development. While I am proud of the interactive elements and UX flow I achieved, I know every project will bring new lessons. I look forward to the next challenge, armed with the insights I've gathered from this experience.
+
 
 ##  Sneheel:
 
