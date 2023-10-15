@@ -62,6 +62,22 @@ We used Procreate to illustrate the scenes and characters.
 
 
 ##  Buka:
+In this project, my primary role was to illustrate the comic slides for adding visual appeal and depth to the storytelling. Here's a breakdown of the slides I worked on:
+
+1. Slide 1: Fish in the Ocean
+   ![IMG_0400](https://github.com/qm-naushad/finorfatecomic/assets/132140246/492dbbee-7d47-43ee-ab68-2d2d412baf25)
+2. Slide 2: Fish ends up in the net
+3. Slide 5: Fish ends up in aquarium (with other fish) at girl’s house
+   ![IMG_0399](https://github.com/qm-naushad/finorfatecomic/assets/132140246/3ffd77bd-f3da-4af3-8efb-f1e1b772deff)
+4. Slide 6: Fish finds a partner
+5. Slide 6: Fish and the family
+Also, I have worked on the following elements included throughout the slides:
+1. Fish overall body shape
+2. Female fish and the baby fish
+   ![familyFishBody](https://github.com/qm-naushad/finorfatecomic/assets/132140246/c8e190fd-2b4b-48fd-bc2d-741dee37b2ec)
+3. Girl's bedroon (worked with Sara)
+5. Ocean bubbles on the title page
+6. Net that catches the fish in the ocean
 
 ##  QM:
 
@@ -169,6 +185,8 @@ What helped in producing the scenes was image references. During the illustrativ
 My expectations and goals were exceeded for this assignment. I think our group worked very well together—we were all on the same page and often agreed with each other, but were still vocal about any changes that needed to be made on the creative or technical side.
 
 ##  Buka:
+I'm very much satisfied with how our comic website turned out. The incorporation of sound effects and interactive features on each page has not only made the comic engaging but also fun to explore. While I'm proud of what we've done, there's always room for improvement. If we had more time, we could have focused on enhancing user-friendliness. For instance, despite our efforts to include an arrow to guide users in scrolling through the pages, there might still be some confusion for the user. This the lesson I'll carry forward to my future projects, prioritizing user guidance to enhance interaction and the overall experience. During this project, I had an opportunity to learn to create digital art on my iPad which significantly enhanced my visual storytelling skill.
+Lastly, my heartfelt thanks go out to my amazing teammates who have created an great website and effectively bringing the story to life.
 
 ##  QM:
 
