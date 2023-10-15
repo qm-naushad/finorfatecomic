@@ -47,8 +47,18 @@ const bubbleImages = [
     'bubble4.png',
     'bubble5.png'
 ];
+const bubbleCount = {
+    slide1: 5,
+    slide2: 5,
+    slide3: 5
+};
+const MAX_BUBBLES_PER_SLIDE = 15;  // You can change this to the number of bubbles you want as a maximum.
 
 function createBubble(slide) {
+    if (bubbleCount[slide.id] >= MAX_BUBBLES_PER_SLIDE) {
+        return;  // Do not create any more bubbles for this slide
+    }
+
     const bubble = document.createElement('img');
     bubble.src = bubbleImages[Math.floor(Math.random() * bubbleImages.length)];
     bubble.classList.add('bubble');
@@ -63,9 +73,11 @@ function createBubble(slide) {
     bubble.style.animationDuration = `${randomDuration}s`;
 
     slide.appendChild(bubble);
+    bubbleCount[slide.id]++;  // Increment the count for this slide
 
     bubble.addEventListener('animationend', () => {
         bubble.remove();
+        bubbleCount[slide.id]--;  // Decrement the count when a bubble is removed
     });
 }
 
@@ -127,3 +139,32 @@ function checkSlideVisibility() {
 container.addEventListener('scroll', checkSlideVisibility);
 
 setInterval(checkSlideVisibility, 200);
+
+
+//Fish animation
+
+const slide1 = document.getElementById('slide1');
+const slide2 = document.getElementById('slide2');
+const slide3 = document.getElementById('slide3');
+const fish = document.querySelector('.fish-animation');
+
+
+const fish2 = document.getElementById('fish2');
+
+container.addEventListener('scroll', function() {
+    // Define the threshold. Set it to 0.3 for 30%.
+    const threshold1 =0.3
+
+    // Fish movement for slide2
+    const startMoveAtSlide2 = slide1.offsetWidth * threshold1;
+    if (container.scrollLeft > startMoveAtSlide2 && container.scrollLeft < slide1.offsetWidth + slide2.offsetWidth) {
+        const effectiveScroll = container.scrollLeft - startMoveAtSlide2;
+        const percentageScrolled = effectiveScroll / (slide2.offsetWidth - slide2.offsetWidth * threshold1);
+        fish2.style.left = -100+percentageScrolled * 60 + "%";  // Adjusting from 10% to 60%
+    }
+});
+
+
+
+
+
