@@ -188,8 +188,6 @@ We did eventually come up with a solution (Frame 3), which was to change the per
 ## Image references
 What helped in producing the scenes was image references. During the illustrative process, I often searched for clipart versions of images I wanted to illustrate, which helped me visualize how I wanted the frames to look (ex. Ferris wheel, carnival tent, fishbowl, toilet) and in turn helped me modify each element to suit our styling.
 
-(ADD EXAMPLES)
-
 My expectations and goals were exceeded for this assignment. I think our group worked very well together—we were all on the same page and often agreed with each other, but were still vocal about any changes that needed to be made on the creative or technical side.
 
 ##  Buka:
