@@ -74,6 +74,10 @@ In this project, my primary role was to illustrate the comic slides for adding v
 4. Slide 6: Fish finds a partner
 5. Slide 6: Fish and the family
 
+![ends_up_in_the_aquarium](https://github.com/qm-naushad/finorfatecomic/assets/132140246/24db1697-80fd-4ed8-b5ab-7c99686052c6)
+![find_partner](https://github.com/qm-naushad/finorfatecomic/assets/132140246/86bb9e6d-57ee-4eef-ad90-b3a6875c857d)
+![family 2](https://github.com/qm-naushad/finorfatecomic/assets/132140246/41a2429c-f4af-4d16-9dfc-6d0769501010)
+
 Also, I have worked on the following elements included throughout the slides:
 1. Fish overall body shape
 2. Female fish and the baby fish
