@@ -75,12 +75,24 @@ body::-webkit-scrollbar-thumb {
 
 .conditional {
     display: none;
+}89 
+
+
+
+//////////////
+
+.audio-control {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
+    padding: 0;
+    margin: 0;
 }
 
-.fish-animation {
-    width: 15%; /* adjust this based on your fish image size */
-    position: absolute;
-    bottom: 40%; /* adjust starting vertical position */
-    left: 5%;  /* initial starting horizontal position */
-    /* z-index: 2; This will place the fish above the slides */
+.audio-control img {
+    width: auto; /* You can adjust this as per your requirement */
+    height: 30px; /* You can adjust this as per your requirement */
+    margin: 0;
+    padding: 0;
 }
