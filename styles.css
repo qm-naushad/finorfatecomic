@@ -130,8 +130,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 #dead{
-    bottom: 40%; /* adjust starting vertical position */
-    left: 50%;
+    width: 25%;
+    bottom: 30%; /* adjust starting vertical position */
+    left: 46%;
 }
 
 #neutral{
