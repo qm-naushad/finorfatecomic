@@ -124,12 +124,6 @@ setInterval(checkSlideVisibility, 200);
 ///////////////////
 
 
-const slide1 = document.getElementById('slide1');
-const slide2 = document.getElementById('slide2');
-const slide3 = document.getElementById('slide3');
-const slide4 = document.getElementById('slide4');
-const fish2 = document.getElementById('fish2');
-
 let isMuted = false;
 
 function toggleMute() {
@@ -141,6 +135,22 @@ function toggleMute() {
     audioElements.forEach(audio => {
         audio.muted = isMuted;
     });
+    if (isMuted) {
+        muteBtn.src = "soundoff.png";
+    } else {
+        muteBtn.src = "soundon.png";
+    }
+}
+
+const slide1 = document.getElementById('slide1');
+const slide2 = document.getElementById('slide2');
+const slide3 = document.getElementById('slide3');
+const slide4 = document.getElementById('slide4');
+const fish2 = document.getElementById('fish2');
+
+container.addEventListener('scroll', function() {
+    // Define the threshold. Set it to 0.3 for 30%.
+    const threshold1 =0.3
 
     // Fish movement for slide2
     const startMoveAtSlide2 = slide2.offsetWidth * threshold1;
@@ -165,19 +175,3 @@ function toggleMute() {
     }
 
 });
-
-
-
-
-//balloon animation
-
-
-//
-
-
-    if (isMuted) {
-        muteBtn.src = "soundoff.png";
-    } else {
-        muteBtn.src = "soundon.png";
-    }
-}

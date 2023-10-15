@@ -75,11 +75,9 @@ body::-webkit-scrollbar-thumb {
 
 .conditional {
     display: none;
-}89 
+} 
 
 
-
-//////////////
 
 .audio-control {
     position: fixed;
