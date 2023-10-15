@@ -179,8 +179,8 @@ container.addEventListener('scroll', function() {
     if (container.scrollLeft > startMoveAtSlide2 && container.scrollLeft < slide2.offsetWidth + slide2.offsetWidth) {
         const effectiveScroll = container.scrollLeft - startMoveAtSlide2;
         const percentageScrolled = effectiveScroll / (slide2.offsetWidth - slide2.offsetWidth * threshold1);
-        fish2.style.left = -100+percentageScrolled * 65 + "%";  // Adjusting from -100% to 60%
-        fish3.style.left = -100+percentageScrolled * 65 + "%";  // Adjusting from -100% to 60%
+        fish2.style.left = -100+percentageScrolled * 62 + "%";  // Adjusting from -100% to 60%
+        fish3.style.left = -100+percentageScrolled * 62 + "%";  // Adjusting from -100% to 60%
     }
 
 
@@ -192,7 +192,7 @@ container.addEventListener('scroll', function() {
         else
             fish2.style.opacity=1;
         const net2 = document.getElementById('net2');
-        net2.style.transform = "translateY(20vh) translateX(-20vw) rotate(-20deg)"; // translate the net downwards by 50vh and rotate to 0 degree
+        net2.style.transform = "translateY(20vh) translateX(-30vw) rotate(-20deg)"; // translate the net downwards by 50vh and rotate to 0 degree
     }
 
     // Balloons animation for slide4
